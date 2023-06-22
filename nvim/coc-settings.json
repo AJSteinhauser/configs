@@ -1,0 +1,39 @@
+{
+    "languageserver": {
+        "roblox-lsp": {
+            // location to your language server here
+            // if on Windows, make sure to use two backspashes for directories
+            "command": "/Users/ajsteinhauser/.config/coc/roblox-lsp/server/bin/macOS/lua-language-server",
+            "args": [
+                "-E",
+                // same thing here
+                "/Users/ajsteinhauser/.config/coc/roblox-lsp/server/main.lua"
+            ],
+            "rootPatterns": [
+                "*.package.json",
+                "*.project.json",
+                "aftman.toml",
+                ".git/"
+            ],
+            "filetypes": [
+                "lua",
+                "luau"
+            ],
+            "settings": {
+                "robloxLsp": {
+                    "completion": {
+                        "workspaceWord": false
+                    },
+                    "semantic": {
+                        "enable": true
+                    }
+                },
+                "Lua": {
+                    "runtime": {
+                        "version": "Luau"
+                    }
+                }
+            }
+        },
+    }
+}
